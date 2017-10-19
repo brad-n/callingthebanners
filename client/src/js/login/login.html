@@ -1,0 +1,75 @@
+
+<h3 class="text-center"><span style="color:red">{{error}}</span>&nbsp;</h3>
+
+<!--Card-->
+<div ng-if="show_login" class="col-sm-4 col-sm-offset-4 card card-cascade">
+
+    <!--Card image-->
+    <div class="view">
+        <h2 class="h2-responsive text-center">Account Login</h2>
+    </div>
+    <!--/Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+    		<form onsubmit="accountLogin();">
+			<div class="form-group">
+				<input type="text" ng-model="user.user_email" />
+				<label>Email</label>
+			</div>
+			
+			<div class="form-group">
+				<input type="password" ng-model="user.password" />
+				<label>Password</label>
+			</div>
+			
+			<input type="submit" value="Login" class="btn btn-default" ng-click="accountLogin();" />
+	        <div class="clearfix"></div>
+	        <a href="javascript:void(0)" ng-click="toggleView('create')">create account</a>
+	        <div class="clearfix"></div>
+	        <br/> <!-- buffer / padding -->
+		</form>
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card-->
+
+
+<!--Card-->
+<div ng-if="show_create" class="col-sm-4 col-sm-offset-4 card card-cascade">
+
+    <!--Card image-->
+    <div class="view">
+        <h2 class="h2-responsive text-center">Create Account</h2>
+    </div>
+    <!--/Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+    
+    			<div class="form-group">
+				<input type="text" ng-model="new_user.user_name" />
+				<label>Name</label>
+			</div>
+    
+			<div class="form-group">
+				<input type="text" ng-model="new_user.user_email" />
+				<label>Email</label>
+			</div>
+			
+			<div class="form-group">
+				<input type="password" ng-model="new_user.password" />
+				<label>Password</label>
+			</div>
+			
+			<button class="btn btn-default" ng-click="createAccount();">Create</button>
+	        <div class="clearfix"></div>
+	        <a href="javascript:void(0)" ng-click="toggleView('login')">cancel</a>
+	        <div class="clearfix"></div>
+	        <br/> <!-- buffer / padding -->
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card-->

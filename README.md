@@ -1,5 +1,4 @@
-## Isle Of Ravens ##
-*A Game of Thrones Stats site*
+## Calling The Banners ##
+*A Game of Thrones Match Tracking Site*
 
-Isle Of Ravens is a site that pulls in tournament data and generates an Elo rating for each player.  Players can drill down into the details, seeing how much a particular tournament or even round played affected their Elo rating.
-# callingthebanners
+Calling The Banners is a site to help with group deck testing and building.  Users can create groups and invite individuals where they can track match reports that feed into the analytical system to help make informed decisions on the effectiveness of card combinations or decklists.
