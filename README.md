@@ -5,4 +5,4 @@ Calling The Banners is a site to help with group deck testing and building.  Use
 
 
 *Install*
-Run npm install and bower install in the client directory.  Run composer in the server directory.
+Run npm install and bower install in the client directory.  Run composer in the server directory.  Run server/db/*.sql files to bring DB up to date.
